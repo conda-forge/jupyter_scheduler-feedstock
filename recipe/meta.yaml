@@ -1,5 +1,5 @@
-{% set name = "jupyter_scheduler" %}
-{% set version = "2.1.0" %}
+{% set name = "jupyter-scheduler" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
-  sha256: 0e928e9a07566b7b8d781169f5fa1bcd9e7ae196317d4a433b692802bed499e6
+  sha256: 64d9123b73a5f42efc7ab7ea33209c68644e7785cde7a383595c2ee4dd158822
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.7
     - hatchling >=1.3.1
-    - jupyterlab >=4.0,<5
+    - jupyterlab >=3.1,<4
     - pip
     - hatch-jupyter-builder
   run:
