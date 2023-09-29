@@ -1,4 +1,4 @@
-{% set name = "jupyter_scheduler" %}
+{% set name = "jupyter-scheduler" %}
 {% set version = "2.1.0" %}
 
 package:
