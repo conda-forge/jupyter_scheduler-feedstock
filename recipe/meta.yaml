@@ -13,7 +13,7 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 1
-`
+
 outputs:
   - name: jupyter-scheduler
   requirements:
@@ -42,7 +42,7 @@ outputs:
       - pip check
     requires:
       - pip
-      
+
   - name: jupyter_scheduler
   requirements:
     host:
