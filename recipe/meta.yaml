@@ -1,21 +1,21 @@
-{% set name = "jupyter_scheduler" %}
 {% set version = "2.1.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: jupyter_scheduler
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/j/jupyter_scheduler/jupyter_scheduler-{{ version }}.tar.gz
   sha256: 0e928e9a07566b7b8d781169f5fa1bcd9e7ae196317d4a433b692802bed499e6
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   number: 1
 
 outputs:
-  - name: jupyter-scheduler
+  - name: jupyter_scheduler
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
         - python >=3.7
@@ -37,13 +37,16 @@ outputs:
         - psutil >=5.9,<6
     test:
       imports:
-        - jupyter-scheduler
+        - jupyter_scheduler
       commands:
         - pip check
       requires:
         - pip
 
-  - name: jupyter_scheduler
+  - name: jupyter-scheduler
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
         - python >=3.7
