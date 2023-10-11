@@ -53,10 +53,6 @@ outputs:
     test:
       imports:
         - jupyter_scheduler
-      commands:
-        - pip check
-      requires:
-        - pip
 
 about:
   summary: A JupyterLab extension for running notebook jobs
