@@ -1,4 +1,4 @@
-{% set name = "typing_extensions" %}
+{% set name = "jupyter_scheduler" %}
 {% set version = "2.1.0" %}
 
 package:
