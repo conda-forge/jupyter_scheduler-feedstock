@@ -1,18 +1,19 @@
+{% set name = "typing_extensions" %}
 {% set version = "2.1.0" %}
 
 package:
-  name: jupyter_scheduler
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jupyter_scheduler/jupyter_scheduler-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
   sha256: 0e928e9a07566b7b8d781169f5fa1bcd9e7ae196317d4a433b692802bed499e6
 
 build:
   number: 1
 
 outputs:
-  - name: jupyter_scheduler
+  - name: {{ name }}
     build:
       noarch: python
       script: python -m pip install . -vv
