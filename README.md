@@ -27,6 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyter--scheduler-green.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyter_scheduler-green.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) |
 
 Installing jupyter_scheduler
@@ -39,41 +40,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jupyter_scheduler` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `jupyter-scheduler, jupyter_scheduler` can be installed with `conda`:
 
 ```
-conda install jupyter_scheduler
-```
-
-or with `mamba`:
-
-```
-mamba install jupyter_scheduler
-```
-
-It is possible to list all of the versions of `jupyter_scheduler` available on your platform with `conda`:
-
-```
-conda search jupyter_scheduler --channel conda-forge
+conda install jupyter-scheduler jupyter_scheduler
 ```
 
 or with `mamba`:
 
 ```
-mamba search jupyter_scheduler --channel conda-forge
+mamba install jupyter-scheduler jupyter_scheduler
+```
+
+It is possible to list all of the versions of `jupyter-scheduler` available on your platform with `conda`:
+
+```
+conda search jupyter-scheduler --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search jupyter-scheduler --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search jupyter_scheduler --channel conda-forge
+mamba repoquery search jupyter-scheduler --channel conda-forge
 
-# List packages depending on `jupyter_scheduler`:
-mamba repoquery whoneeds jupyter_scheduler --channel conda-forge
+# List packages depending on `jupyter-scheduler`:
+mamba repoquery whoneeds jupyter-scheduler --channel conda-forge
 
-# List dependencies of `jupyter_scheduler`:
-mamba repoquery depends jupyter_scheduler --channel conda-forge
+# List dependencies of `jupyter-scheduler`:
+mamba repoquery depends jupyter-scheduler --channel conda-forge
 ```
 
 
