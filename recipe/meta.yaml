@@ -44,6 +44,16 @@ outputs:
       requires:
         - pip
 
+  - name: jupyter-scheduler
+    build:
+      noarch: python
+    requirements:
+      run:
+        - {{ pin_subpackage(name, exact=True) }}
+    test:
+      imports:
+        - jupyter_scheduler
+
 about:
   summary: A JupyterLab extension for running notebook jobs
   home: https://github.com/jupyter-server/jupyter-scheduler
