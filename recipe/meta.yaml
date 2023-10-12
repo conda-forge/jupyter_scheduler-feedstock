@@ -1,4 +1,4 @@
-{% set name = "jupyter_scheduler" %}
+{% set name = "jupyter-scheduler" %}
 {% set version = "1.4.0" %}
 
 package:
@@ -38,13 +38,13 @@ outputs:
         - psutil >=5.9,<6
     test:
       imports:
-        - jupyter_scheduler
+        - jupyter-scheduler
       commands:
         - pip check
       requires:
         - pip
 
-  - name: jupyter-scheduler
+  - name: jupyter_scheduler
     build:
       noarch: python
     requirements:
@@ -52,7 +52,7 @@ outputs:
         - {{ pin_subpackage(name, exact=True) }}
     test:
       imports:
-        - jupyter_scheduler
+        - jupyter-scheduler
 
 about:
   summary: A JupyterLab extension for running notebook jobs
