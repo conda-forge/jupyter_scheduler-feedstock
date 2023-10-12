@@ -25,7 +25,7 @@ outputs:
         - pip
         - hatch-jupyter-builder
       run:
-        - python >=3.7,,<3.12
+        - python >=3.7,<3.12
         - jupyter_server >=1.6,<3
         - traitlets >=5.0,<6
         - nbconvert >=7.0,<8
