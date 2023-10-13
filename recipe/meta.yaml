@@ -45,7 +45,7 @@ outputs:
       requires:
         - pip
 
-  - name: jupyter_scheduler
+  - name: jupyter-scheduler
     build:
       noarch: python
     requirements:
