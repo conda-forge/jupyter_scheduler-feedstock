@@ -10,7 +10,7 @@ source:
   sha256: 5600d4db008ac82d4102f0bfea9960e84e7eff2ab4197ebe7440abebbf945c1b
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
@@ -30,7 +30,7 @@ outputs:
         - jupyter_server >=1.6,<3
         - traitlets >=5.0,<6
         - nbconvert >=7.0,<8
-        - pydantic >=1.10,<2
+        - pydantic >=1.10,<3
         - sqlalchemy >=1.0,<2
         - croniter >=1.4,<2
         - pytz ==2023.3
