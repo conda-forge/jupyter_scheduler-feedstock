@@ -1,5 +1,5 @@
 {% set name = "jupyter_scheduler" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
-  sha256: 586d3a6b76f4fb722eb611d7ff767ed01c60fbd5c9214b5c5509642d4eea9f78
+  sha256: 931b2ac30c734293f13df920118f2520877a375bf6bb877295d0a31f1c1feaec
 
 build:
   number: 0
