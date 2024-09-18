@@ -10,7 +10,7 @@ source:
   sha256: a43eed1a1b48c446a34fe894d42ddb677f9b589a864d350c1b4a33c37d5035b3
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
