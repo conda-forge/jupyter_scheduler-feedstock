@@ -1,5 +1,5 @@
 {% set name = "jupyter_scheduler" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
-  sha256: a43eed1a1b48c446a34fe894d42ddb677f9b589a864d350c1b4a33c37d5035b3
+  sha256: c94b40da27bb9e873566e3ccf34d4f8ab914124d41163727cc9bea91eca8f3db
 
 build:
-  number: 2
+  number: 0
 
 outputs:
   - name: {{ name }}
@@ -32,8 +32,8 @@ outputs:
         - pydantic >=1.10,<3
         - sqlalchemy >=2.0,<3
         - croniter >=1.4,<2
-        - pytz ==2023.3
-        - fsspec ==2023.6.0
+        - pytz >=2023.3,<=2024.2
+        - fsspec >=2023.6.0,<=2024.10.0
         - psutil >=5.9,<6
     test:
       imports:
