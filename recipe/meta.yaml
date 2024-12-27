@@ -10,7 +10,7 @@ source:
   sha256: c94b40da27bb9e873566e3ccf34d4f8ab914124d41163727cc9bea91eca8f3db
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
@@ -19,13 +19,13 @@ outputs:
       script: python -m pip install . -vv
     requirements:
       host:
-        - python >=3.7,<3.13
+        - python {{ python_min }}
         - hatchling >=1.3.1
         - jupyterlab >=4.0,<5
         - pip
         - hatch-jupyter-builder
       run:
-        - python >=3.7,<3.13
+        - python >={{ python_min }},<3.13
         - jupyter_server >=1.6,<3
         - traitlets >=5.0,<6
         - nbconvert >=7.0,<8
@@ -50,6 +50,8 @@ outputs:
       run:
         - {{ pin_subpackage(name, exact=True) }}
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - jupyter_scheduler
 
