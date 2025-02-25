@@ -41,13 +41,17 @@ outputs:
       commands:
         - pip check
       requires:
+        - python {{ python_min }}
         - pip
 
   - name: jupyter-scheduler
     build:
       noarch: python
     requirements:
+      host:
+        - python {{ python_min }}
       run:
+        - python >={{ python_min }},<3.13
         - {{ pin_subpackage(name, exact=True) }}
     test:
       requires:
