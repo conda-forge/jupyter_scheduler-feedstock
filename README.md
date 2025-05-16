@@ -28,7 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyter--scheduler-green.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyter-scheduler.svg)](https://anaconda.org/conda-forge/jupyter-scheduler) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyter_scheduler-green.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyter__scheduler-green.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyter_scheduler.svg)](https://anaconda.org/conda-forge/jupyter_scheduler) |
 
 Installing jupyter_scheduler
 ============================
@@ -148,7 +148,4 @@ Feedstock Maintainers
 * [@JasonWeill](https://github.com/JasonWeill/)
 * [@andrii-i](https://github.com/andrii-i/)
 * [@dlqqq](https://github.com/dlqqq/)
-
-
-<!-- dummy commit to enable rerendering -->
 
