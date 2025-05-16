@@ -26,7 +26,7 @@ outputs:
         - pip
         - hatch-jupyter-builder
       run:
-        - python >={{ python_min }},<3.13
+        - python >={{ python_min }},<3.14
         - jupyter_server >=1.6,<3
         - traitlets >=5.0,<6
         - nbconvert >=7.0,<8
@@ -34,7 +34,7 @@ outputs:
         - sqlalchemy >=2.0,<3
         - croniter >=1.4,<2
         - pytz >=2023.3,<=2024.2
-        - fsspec >=2023.6.0,<=2024.10.0
+        - fsspec >=2023.6.0,<=2025.3.2,!=2025.3.1
         - psutil >=5.9,<6
     test:
       imports:
@@ -52,7 +52,7 @@ outputs:
       host:
         - python {{ python_min }}
       run:
-        - python >={{ python_min }},<3.13
+        - python >={{ python_min }},<3.14
         - {{ pin_subpackage(name, exact=True) }}
     test:
       requires:
