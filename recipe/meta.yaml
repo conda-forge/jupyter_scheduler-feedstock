@@ -1,13 +1,13 @@
 {% set name = "jupyter_scheduler" %}
-{% set version = "2.12.0" %}
+{% set version = "2.12.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyter_scheduler-{{ version }}.tar.gz
-  sha256: dd70164983cb959006027b581968f91e091c6ddd4918843e2ccae52b9be8fd75
+  url: https://github.com/jupyter-server/jupyter-scheduler/releases/download/v{{ version }}/jupyter_scheduler-{{ version }}.tar.gz
+  sha256: f8b8d657ee742f96ec74ea2f8232e66868794342522ff3cf1e0d1a4ce55d1549
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ outputs:
         - croniter >=1.4,<2
         - pytz >=2023.3,<=2024.2
         - fsspec >=2025.3.2
-        - psutil >=5.9,<6
+        - psutil >=5.9
     test:
       imports:
         - jupyter_scheduler
